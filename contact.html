@@ -1,50 +1,36 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Contact • Especially4You</title>
-  <meta name="description" content="Especially4You — catering & cakes for birthdays, showers and corporate functions in South Africa.">
-  <link rel="icon" href="assets/img/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact • Especially4You</title>
+<link rel="icon" href="assets/img/favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head><body>
 <header class="site-header">
-  <a class="brand" href="index.html">
-    <img src="assets/img/logo.png" alt="Especially4You logo" width="36" height="36">
-    <span>Especially4You</span>
-  </a>
-  <nav class="nav">
-    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    <ul id="navmenu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+  <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="" width="36" height="36"><span>Especially4You</span></a>
+  <nav class="nav"><button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul id="navmenu"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact</a></li></ul>
   </nav>
 </header>
 <main>
 
 <section class="page-hero"><h1>Contact & Booking</h1><p>Share a few details and we’ll get back to you with a quote.</p></section>
 <section class="contact" id="booking">
-  <form class="form" method="POST" action="https://formspree.io/f/xblddemo">
-    <div class="grid2">
-      <label>Full name<input name="name" required></label>
-      <label>Email<input type="email" name="email" required></label>
-      <label>Phone / WhatsApp<input name="phone" placeholder="+27 ..."></label>
-      <label>Occasion<select name="event"><option>Birthday</option><option>Baby Shower</option><option>Bridal Shower</option><option>Corporate Function</option><option>Other</option></select></label>
-      <label>Event date<input type="date" name="date" required></label>
-      <label>Guests<input type="number" name="guests" min="1" placeholder="e.g. 50"></label>
-    </div>
-    <label>Province<select name="province"><option>Gauteng</option><option>Western Cape</option><option>KwaZulu-Natal</option><option>Eastern Cape</option><option>Free State</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>Northern Cape</option></select></label>
-    <label>Location / Venue<input name="location" placeholder="City / Venue name"></label>
-    <fieldset><legend>Services needed</legend><label class="check"><input type="checkbox" name="services" value="Catering"> Catering</label><label class="check"><input type="checkbox" name="services" value="Baking"> Baking</label></fieldset>
-    <label>Notes<textarea name="message" rows="5" placeholder="Theme, flavours, dietary needs…"></textarea></label>
-    <div class="actions"><button class="btn" type="submit">Send Request</button><a class="btn ghost" href="https://wa.me/27826101046" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
-  </form>
+<form class="form" method="POST" action="https://formspree.io/f/xblddemo">
+<div class="grid2">
+<label>Full name<input name="name" required></label>
+<label>Email<input type="email" name="email" required></label>
+<label>Phone / WhatsApp<input name="phone" placeholder="+27 ..."></label>
+<label>Occasion<select name="event"><option>Birthday</option><option>Baby Shower</option><option>Bridal Shower</option><option>Corporate Function</option><option>Other</option></select></label>
+<label>Event date<input type="date" name="date" required></label>
+<label>Guests<input type="number" name="guests" min="1" placeholder="e.g. 50"></label>
+</div>
+<label>Province<select name="province"><option>Gauteng</option><option>Western Cape</option><option>KwaZulu-Natal</option><option>Eastern Cape</option><option>Free State</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>Northern Cape</option></select></label>
+<label>Location / Venue<input name="location" placeholder="City / Venue name"></label>
+<fieldset><legend>Services needed</legend><label class="check"><input type="checkbox" name="services" value="Catering"> Catering</label><label class="check"><input type="checkbox" name="services" value="Baking"> Baking</label></fieldset>
+<label>Notes<textarea name="message" rows="5" placeholder="Theme, flavours, dietary needs…"></textarea></label>
+<div class="actions"><button class="btn" type="submit">Send Request</button><a class="btn ghost" href="https://wa.me/27826101046" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+</form>
 </section>
-
 </main>
 <footer class="site-footer">
   <div class="cols">
@@ -52,8 +38,7 @@
     <div><h4>Services</h4><a href="services.html#catering">Catering</a><a href="services.html#baking">Baking</a></div>
     <div><h4>Contact</h4><a href="mailto:hello@especially4you.co.za">Email</a><a target="_blank" rel="noopener" href="https://wa.me/27826101046">WhatsApp</a></div>
   </div>
-  <div class="copy">© <span id="year">2025</span> Especially4You • South Africa</div>
+  <div class="copy">© <span id="year"></span> Especially4You • South Africa</div>
 </footer>
 <script src="assets/js/main.js"></script>
-</body>
-</html>
+</body></html>
