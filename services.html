@@ -1,159 +1,66 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Services • Especially4You</title>
-  <meta name="description" content="Explore Especially4You catering menus and baking (cakes & cupcakes) with package ideas and add-ons.">
-  <meta name="theme-color" content="#FF3D71">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <meta name="description" content="Especially4You — catering & cakes for birthdays, showers and corporate functions in South Africa.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<div class="page-wrap">
 <header class="site-header">
   <a class="brand" href="index.html">
-    <img src="assets/img/logo.svg" alt="Especially4You logo" width="40" height="40" />
-    <span class="brand-text">Especially4You</span>
+    <img src="assets/img/logo.png" alt="Especially4You logo" width="36" height="36">
+    <span>Especially4You</span>
   </a>
   <nav class="nav">
-    <button class="burger" id="burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navmenu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul id="navmenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a class="btn-small" href="contact.html#booking">Book Now</a></li>
     </ul>
   </nav>
 </header>
 <main>
 
-<section class="page-hero">
-  <h1>Services</h1>
-  <p>Choose what fits your day. Mix and match packages or request a custom menu.</p>
+<section class="page-hero"><h1>Services</h1><p>Choose what fits your day. Mix and match packages or request a custom menu.</p></section>
+
+<section id="catering" class="service">
+  <div class="row">
+    <img src="assets/img/catering-tray.png" alt="Catering">
+    <div><h2>Catering</h2><p>Perfect for birthdays, showers and corporate functions.</p></div>
+  </div>
+  <div class="grid3">
+    <article class="pkg"><h3>Finger Foods</h3><ul><li>Savoury pastries</li><li>Mini sliders</li><li>Chicken skewers</li><li>Crudités & dips</li></ul><div class="price">From R 120 / person</div></article>
+    <article class="pkg"><h3>Buffet</h3><ul><li>2 mains</li><li>2 sides & 2 salads</li><li>Dessert selection</li></ul><div class="price">From R 220 / person</div></article>
+    <article class="pkg"><h3>Corporate Platters</h3><ul><li>Sandwich & wrap platters</li><li>Fruit & dessert platters</li><li>Tea/coffee service</li></ul><div class="price">From R 1,400 / platter</div></article>
+  </div>
 </section>
 
-<section id="catering" class="service-section">
-  <div class="service-head">
-    <img src="assets/img/catering-tray.svg" alt="Catering tray" />
-    <div>
-      <h2>Catering</h2>
-      <p>Perfect for birthdays, baby & bridal showers, and corporate functions.</p>
-    </div>
+<section id="baking" class="service">
+  <div class="row">
+    <img src="assets/img/cake.png" alt="Cakes">
+    <div><h2>Baking — Cakes & Cupcakes</h2><p>Custom designs, flavours and finishes.</p></div>
   </div>
-
-  <div class="package-grid">
-    <article class="package">
-      <h3>Finger Foods</h3>
-      <ul>
-        <li>Savoury pastries</li>
-        <li>Mini sliders</li>
-        <li>Chicken skewers</li>
-        <li>Crudités & dips</li>
-      </ul>
-      <div class="price">From R 120 / person</div>
-    </article>
-    <article class="package">
-      <h3>Buffet</h3>
-      <ul>
-        <li>2 mains (e.g. roast chicken, beef stew)</li>
-        <li>2 sides & 2 salads</li>
-        <li>Dessert selection</li>
-      </ul>
-      <div class="price">From R 220 / person</div>
-    </article>
-    <article class="package">
-      <h3>Corporate Platters</h3>
-      <ul>
-        <li>Sandwich & wrap platters</li>
-        <li>Fruit & dessert platters</li>
-        <li>Tea/coffee service</li>
-      </ul>
-      <div class="price">From R 1,400 / platter</div>
-    </article>
+  <div class="grid3">
+    <article class="pkg"><h3>Cupcakes</h3><ul><li>Vanilla / Chocolate</li><li>Red Velvet / Lemon</li><li>Custom toppers</li></ul><div class="price">From R 180 / dozen</div></article>
+    <article class="pkg"><h3>Celebration Cakes</h3><ul><li>1–3 tiers</li><li>Buttercream or fondant</li><li>Custom toppers</li></ul><div class="price">From R 650</div></article>
+    <article class="pkg"><h3>Dessert Table</h3><ul><li>Mini tarts, brownies, pops</li><li>Macarons & meringues</li><li>Styled table setup</li></ul><div class="price">From R 2,200</div></article>
   </div>
-  <p class="fine">Add-ons: dietary options, staffing, tableware, delivery & setup.</p>
-</section>
-
-<section id="baking" class="service-section">
-  <div class="service-head">
-    <img src="assets/img/cake.svg" alt="Cake" />
-    <div>
-      <h2>Baking — Cakes & Cupcakes</h2>
-      <p>Custom designs, flavours and finishes.</p>
-    </div>
-  </div>
-  <div class="package-grid">
-    <article class="package">
-      <h3>Cupcakes</h3>
-      <ul>
-        <li>Classic vanilla/chocolate</li>
-        <li>Red velvet, caramel, lemon</li>
-        <li>Custom toppers & colours</li>
-      </ul>
-      <div class="price">From R 180 / dozen</div>
-    </article>
-    <article class="package">
-      <h3>Celebration Cakes</h3>
-      <ul>
-        <li>1–3 tiers</li>
-        <li>Buttercream or fondant</li>
-        <li>Custom toppers</li>
-      </ul>
-      <div class="price">From R 650</div>
-    </article>
-    <article class="package">
-      <h3>Dessert Table</h3>
-      <ul>
-        <li>Mini tarts, brownies, cake pops</li>
-        <li>Macarons & meringues</li>
-        <li>Styled table setup</li>
-      </ul>
-      <div class="price">From R 2,200</div>
-    </article>
-  </div>
-  <p class="fine">Lead time: 5–7 days for cakes; larger orders may require more notice.</p>
-</section>
-
-<section class="cta-wide">
-  <h2>Ready to plan your menu?</h2>
-  <a class="btn" href="contact.html#booking">Request a Quote</a>
 </section>
 
 </main>
 <footer class="site-footer">
-  <div class="footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img src="assets/img/logo.svg" alt="Especially4You logo" width="32" height="32" />
-        <strong>Especially4You</strong>
-      </div>
-      <p>Catering & Baking for life's sweetest moments</p>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <ul>
-        <li><a href="services.html#catering">Catering</a></li>
-        <li><a href="services.html#baking">Baking (Cakes & Cupcakes)</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="mailto:hello@especially4you.co.za">hello@especially4you.co.za</a></li>
-        <li><a href="contact.html#booking">Request a quote</a></li>
-        <li><a href="https://wa.me/0000000000" target="_blank" rel="noopener">WhatsApp (add your number)</a></li>
-      </ul>
-    </div>
+  <div class="cols">
+    <div><strong>Especially4You</strong><p>Catering & Baking for life's sweetest moments</p></div>
+    <div><h4>Services</h4><a href="services.html#catering">Catering</a><a href="services.html#baking">Baking</a></div>
+    <div><h4>Contact</h4><a href="mailto:hello@especially4you.co.za">Email</a><a target="_blank" rel="noopener" href="https://wa.me/27826101046">WhatsApp</a></div>
   </div>
-  <div class="subfooter">© 2025 Especially4You. All rights reserved. Made with ♥ in South Africa.</div>
+  <div class="copy">© <span id="year">2025</span> Especially4You • South Africa</div>
 </footer>
-</div>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

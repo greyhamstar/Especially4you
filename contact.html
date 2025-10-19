@@ -1,134 +1,59 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact • Especially4You</title>
-  <meta name="description" content="Contact Especially4You to request a quote for catering, cakes, and cupcakes in South Africa.">
-  <meta name="theme-color" content="#FF3D71">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <meta name="description" content="Especially4You — catering & cakes for birthdays, showers and corporate functions in South Africa.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-<div class="page-wrap">
 <header class="site-header">
   <a class="brand" href="index.html">
-    <img src="assets/img/logo.svg" alt="Especially4You logo" width="40" height="40" />
-    <span class="brand-text">Especially4You</span>
+    <img src="assets/img/logo.png" alt="Especially4You logo" width="36" height="36">
+    <span>Especially4You</span>
   </a>
   <nav class="nav">
-    <button class="burger" id="burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navmenu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul id="navmenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a class="btn-small" href="contact.html#booking">Book Now</a></li>
     </ul>
   </nav>
 </header>
 <main>
 
-<section class="page-hero">
-  <h1>Contact & Booking</h1>
-  <p>Share a few details and we’ll get back to you with a quote.</p>
-</section>
-
-<section id="booking" class="contact-section">
-  <form name="booking" method="POST" data-netlify="true" class="form-card" action="https://formspree.io/f/xblddemo">
-    <input type="hidden" name="form-name" value="booking">
-    <div class="grid-2">
-      <div class="field">
-        <label for="name">Full name</label>
-        <input id="name" name="name" required placeholder="Your name">
-      </div>
-      <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com">
-      </div>
-      <div class="field">
-        <label for="phone">Phone / WhatsApp</label>
-        <input id="phone" name="phone" placeholder="+27 ...">
-      </div>
-      <div class="field">
-        <label for="event">Occasion</label>
-        <select id="event" name="event">
-          <option>Birthday</option>
-          <option>Baby Shower</option>
-          <option>Bridal Shower</option>
-          <option>Corporate Function</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="field">
-        <label for="date">Event date</label>
-        <input id="date" name="date" type="date" required>
-      </div>
-      <div class="field">
-        <label for="guests">Guests</label>
-        <input id="guests" name="guests" type="number" min="1" placeholder="e.g. 50">
-      </div>
+<section class="page-hero"><h1>Contact & Booking</h1><p>Share a few details and we’ll get back to you with a quote.</p></section>
+<section class="contact" id="booking">
+  <form class="form" method="POST" action="https://formspree.io/f/xblddemo">
+    <div class="grid2">
+      <label>Full name<input name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Phone / WhatsApp<input name="phone" placeholder="+27 ..."></label>
+      <label>Occasion<select name="event"><option>Birthday</option><option>Baby Shower</option><option>Bridal Shower</option><option>Corporate Function</option><option>Other</option></select></label>
+      <label>Event date<input type="date" name="date" required></label>
+      <label>Guests<input type="number" name="guests" min="1" placeholder="e.g. 50"></label>
     </div>
-    <div class="field">
-      <label for="location">Location / Venue</label>
-      <input id="location" name="location" placeholder="City / Venue name">
-    </div>
-    <div class="field">
-      <label for="services">Services needed</label>
-      <label class="check"><input type="checkbox" name="services" value="Catering"> Catering</label>
-      <label class="check"><input type="checkbox" name="services" value="Baking"> Baking (cakes & cupcakes)</label>
-    </div>
-    <div class="field">
-      <label for="message">Notes</label>
-      <textarea id="message" name="message" rows="5" placeholder="Theme, flavours, dietary needs…"></textarea>
-    </div>
-    <div class="actions">
-      <button class="btn" type="submit">Send Request</button>
-      <a class="btn ghost" href="mailto:hello@especially4you.co.za?subject=Quote%20request%20-%20Especially4You">Email Instead</a>
-    </div>
-    <p class="fine">This form works on Netlify (data-netlify) or Formspree. Replace the action URL with your own endpoint, or remove action to use Netlify Forms.</p>
+    <label>Province<select name="province"><option>Gauteng</option><option>Western Cape</option><option>KwaZulu-Natal</option><option>Eastern Cape</option><option>Free State</option><option>Limpopo</option><option>Mpumalanga</option><option>North West</option><option>Northern Cape</option></select></label>
+    <label>Location / Venue<input name="location" placeholder="City / Venue name"></label>
+    <fieldset><legend>Services needed</legend><label class="check"><input type="checkbox" name="services" value="Catering"> Catering</label><label class="check"><input type="checkbox" name="services" value="Baking"> Baking</label></fieldset>
+    <label>Notes<textarea name="message" rows="5" placeholder="Theme, flavours, dietary needs…"></textarea></label>
+    <div class="actions"><button class="btn" type="submit">Send Request</button><a class="btn ghost" href="https://wa.me/27826101046" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
   </form>
-</section>
-
-<section class="cta-wide">
-  <h2>Prefer WhatsApp?</h2>
-  <p>Tap below and say hi—we’ll reply fast.</p>
-  <a class="btn" href="https://wa.me/0000000000" target="_blank" rel="noopener">Message on WhatsApp</a>
 </section>
 
 </main>
 <footer class="site-footer">
-  <div class="footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img src="assets/img/logo.svg" alt="Especially4You logo" width="32" height="32" />
-        <strong>Especially4You</strong>
-      </div>
-      <p>Catering & Baking for life's sweetest moments</p>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <ul>
-        <li><a href="services.html#catering">Catering</a></li>
-        <li><a href="services.html#baking">Baking (Cakes & Cupcakes)</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="mailto:hello@especially4you.co.za">hello@especially4you.co.za</a></li>
-        <li><a href="contact.html#booking">Request a quote</a></li>
-        <li><a href="https://wa.me/0000000000" target="_blank" rel="noopener">WhatsApp (add your number)</a></li>
-      </ul>
-    </div>
+  <div class="cols">
+    <div><strong>Especially4You</strong><p>Catering & Baking for life's sweetest moments</p></div>
+    <div><h4>Services</h4><a href="services.html#catering">Catering</a><a href="services.html#baking">Baking</a></div>
+    <div><h4>Contact</h4><a href="mailto:hello@especially4you.co.za">Email</a><a target="_blank" rel="noopener" href="https://wa.me/27826101046">WhatsApp</a></div>
   </div>
-  <div class="subfooter">© 2025 Especially4You. All rights reserved. Made with ♥ in South Africa.</div>
+  <div class="copy">© <span id="year">2025</span> Especially4You • South Africa</div>
 </footer>
-</div>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
